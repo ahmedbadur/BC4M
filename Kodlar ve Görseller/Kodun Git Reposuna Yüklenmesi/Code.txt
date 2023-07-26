@@ -1,0 +1,48 @@
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023
+$ git config --global user.name "ahmedbadur"
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023
+$ git config --global user.email "ahmedfbadur@gmail.com"
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023
+$ git config --global user.name
+ahmedbadur
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023
+$ git config --global user.email
+ahmedfbadur@gmail.com
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023
+$ git init
+Initialized empty Git repository in C:/Users/ahmed/Desktop/academy2023-application/akademi2023/.git/
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023 (master)
+$ git add .
+warning: in the working copy of 'app.py', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'requirements.txt', LF will be replaced by CRLF the next time Git touches it
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023 (master)
+$ git commit -m "First commit"
+[master (root-commit) 2347ed6] First commit
+ 2 files changed, 14 insertions(+)
+ create mode 100644 app.py
+ create mode 100644 requirements.txt
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023 (master)
+$ git remote add origin https://github.com/ahmedbadur/BC4M.git
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023 (master)
+$ git push -u -f origin
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 428 bytes | 428.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/ahmedbadur/BC4M.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023 (master)
+$
+
