@@ -1,0 +1,83 @@
+ahmed@BADURCOM MINGW64 ~
+$ cd C:/Users/ahmed/Desktop/academy2023-application/akademi2023/DockerFile
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023/DockerFile (master)
+$ docker build -t ahmedbadur/bc4m:latestversion .
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 126B done
+#1 DONE 0.0s
+
+#2 [internal] load .dockerignore
+#2 transferring context: 2B done
+#2 DONE 0.0s
+
+#3 [auth] library/python:pull token for registry-1.docker.io
+#3 DONE 0.0s
+
+#4 [internal] load metadata for docker.io/library/python:3
+#4 DONE 1.5s
+
+#5 [1/3] FROM docker.io/library/python:3@sha256:d73088ce13d5a1eec1dd05b47736041ae6921d08d2f240035d99642db98bc8d4
+#5 DONE 0.0s
+
+#6 [internal] load build context
+#6 transferring context: 28B done
+#6 DONE 0.0s
+
+#7 [2/3] COPY app.py /app.py
+#7 CACHED
+
+#8 [3/3] RUN pip install Flask
+#8 CACHED
+
+#9 exporting to image
+#9 exporting layers done
+#9 writing image sha256:f13e7d35623f5a1d4d8d17c87047f5d2ed800ec91c2b2e20d93f3ba2ba3c7e0b done
+#9 naming to docker.io/ahmedbadur/bc4m:latestversion done
+#9 DONE 0.0s
+
+What's Next?
+  View summary of image vulnerabilities and recommendations → docker scout quickview
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023/DockerFile (master)
+$ docker login
+Authenticating with existing credentials...
+Login Succeeded
+
+Logging in with your password grants your terminal complete access to your account.
+For better security, log in with a limited-privilege personal access token. Learn more at https://docs.docker.com/go/access-tokens/
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023/DockerFile (master)
+$ docker push ahmedbadur/bc4m:latestversion
+The push refers to repository [docker.io/ahmedbadur/bc4m]
+8f982bbf3fe3: Preparing
+54e35b25200e: Preparing
+56b9a4954d3a: Preparing
+b7023961c3b7: Preparing
+9658baebb19e: Preparing
+f1acaab90728: Preparing
+28218ecd8008: Preparing
+2f66f3254105: Preparing
+a72216901005: Preparing
+61581d479298: Preparing
+f1acaab90728: Waiting
+28218ecd8008: Waiting
+2f66f3254105: Waiting
+a72216901005: Waiting
+61581d479298: Waiting
+56b9a4954d3a: Layer already exists
+9658baebb19e: Layer already exists
+b7023961c3b7: Layer already exists
+54e35b25200e: Layer already exists
+8f982bbf3fe3: Layer already exists
+f1acaab90728: Layer already exists
+28218ecd8008: Layer already exists
+2f66f3254105: Layer already exists
+a72216901005: Layer already exists
+61581d479298: Layer already exists
+latestversion: digest: sha256:d52a1a50be5355b1692bd7fd880518b4e23e73248d7aa2369d21afe5dc0bf5d3 size: 2425
+
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023/DockerFile (master)
+$

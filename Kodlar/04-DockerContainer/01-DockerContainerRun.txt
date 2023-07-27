@@ -1,0 +1,3 @@
+ahmed@BADURCOM MINGW64 ~/Desktop/academy2023-application/akademi2023/DockerFile (master)
+$ docker run -d -p 5000:5000 myapp:latestversion
+8170dbfb5f532e16a4dd8537a1b3b89ac675e408488278396dbd6de78c2111c9

@@ -1,0 +1,27 @@
+Microsoft Windows [Version 10.0.19044.3086]
+(c) Microsoft Corporation. Tüm hakları saklıdır.
+
+C:\Users\ahmed>cd Desktop\academy2023-application\akademi2023\DockerFile
+
+C:\Users\ahmed\Desktop\academy2023-application\akademi2023\DockerFile>docker build -t myapp:latestversion .
+[+] Building 1.7s (9/9) FINISHED                                                                         docker:default
+ => [internal] load build definition from Dockerfile                                                               0.0s
+ => => transferring dockerfile: 126B                                                                               0.0s
+ => [internal] load .dockerignore                                                                                  0.0s
+ => => transferring context: 2B                                                                                    0.0s
+ => [internal] load metadata for docker.io/library/python:3                                                        1.7s
+ => [auth] library/python:pull token for registry-1.docker.io                                                      0.0s
+ => [internal] load build context                                                                                  0.0s
+ => => transferring context: 28B                                                                                   0.0s
+ => [1/3] FROM docker.io/library/python:3@sha256:d73088ce13d5a1eec1dd05b47736041ae6921d08d2f240035d99642db98bc8d4  0.0s
+ => CACHED [2/3] COPY app.py /app.py                                                                               0.0s
+ => CACHED [3/3] RUN pip install Flask                                                                             0.0s
+ => exporting to image                                                                                             0.0s
+ => => exporting layers                                                                                            0.0s
+ => => writing image sha256:f13e7d35623f5a1d4d8d17c87047f5d2ed800ec91c2b2e20d93f3ba2ba3c7e0b                       0.0s
+ => => naming to docker.io/library/myapp:latestversion                                                             0.0s
+
+What's Next?
+  View summary of image vulnerabilities and recommendations → docker scout quickview
+
+C:\Users\ahmed\Desktop\academy2023-application\akademi2023\DockerFile>

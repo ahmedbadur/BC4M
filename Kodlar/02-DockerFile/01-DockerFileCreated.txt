@@ -1,0 +1,9 @@
+Microsoft Windows [Version 10.0.19044.3086]
+(c) Microsoft Corporation. Tüm hakları saklıdır.
+
+C:\Users\ahmed>cd Desktop/academy2023-application/akademi2023/DockerFile
+
+C:\Users\ahmed\Desktop\academy2023-application\akademi2023\DockerFile>echo. 2>Dockerfile
+
+
+C:\Users\ahmed\Desktop\academy2023-application\akademi2023\DockerFile>
